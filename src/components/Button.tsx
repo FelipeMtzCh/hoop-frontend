@@ -19,9 +19,7 @@ const Button = ({
   return (
     <button className={borderActive ? stylesBorder : styles}>
       {label}
-      {icon ? (
-        <img className="w-[1.5rem] py-3" src="/Icon.png" alt="icon" />
-      ) : null}
+      {icon ? <img className="w-[1.5rem]" src="/Icon.png" alt="icon" /> : null}
     </button>
   );
 };
